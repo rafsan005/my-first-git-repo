@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Webpage</title>
+
+    <!-- Internal CSS Styles -->
+    <style>
+        /* Styling for the heading */
+        h1 {
+            color: darkblue;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 36px;
+        }
+
+        /* Styling for paragraphs with the 'internal' class */
+        .internal {
+            color: darkgreen;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        /* Styling for lists */
+        ul {
+            font-family: 'Georgia', serif;
+            color: darkred;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        /* Universal selector for border and padding */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Styling for div sections */
+        .section {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        #section1 {
+            background-color: lightyellow;
+        }
+
+        #section2 {
+            background-image: url('https://media.istockphoto.com/id/1455211526/photo/young-woman-looking-away-contemplating-her-new-years-resolutions.jpg?s=2048x2048&w=is&k=20&c=P-DDttz69EyKrmkp6EDjm__9RvYqqYIMQB521VZ8Ra8=');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #section3 {
+            background-color: lightblue;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Webpage Content -->
+
+    <!-- Heading -->
+    <h1>Welcome to My Styled Webpage</h1>
+
+    <!-- Paragraphs with inline, internal, and external styles -->
+    <p style="color: purple; font-family: 'Courier New', monospace;">This is a paragraph with inline styles applied.</p>
+    <p class="internal">This is a paragraph with internal styles applied.</p>
+    <p class="external">This is a paragraph with external styles applied.</p>
+
+    <!-- List -->
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+
+    <!-- Div Sections -->
+    <div id="section1" class="section">
+        <p>This is Section 1 with a yellow background.</p>
+    </div>
+
+    <div id="section2" class="section">
+        <p>This is Section 2 with a background image.</p>
+    </div>
+
+    <div id="section3" class="section">
+        <p>This is Section 3 with a blue background and box shadow.</p>
+    </div>
+
+    <!-- Image with border styles -->
+    <img src="https://media.istockphoto.com/id/1454928178/photo/customer-choose-emoji-emoticons-happy-mood-on-emotions-satisfaction-meter-evaluation-increase.jpg?s=612x612&w=is&k=20&c=n2WuwarEVaXRmqnnzxdsJSekSPcH5oxWREvzQloS-Oo=" alt="Example Image" style="border: 5px solid red; border-radius: 15px; width: 300px; height: auto;">
+
+    <!-- Buttons with display styles -->
+    <button style="display: block; margin: 10px auto;">Block Button</button>
+    <button style="display: inline;">Inline Button</button>
+    <button style="display: none;">Hidden Button</button>
+
+</body>
+</html>
